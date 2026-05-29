@@ -37,7 +37,7 @@ export default function Navbar() {
       >
         {/* Left: logo */}
         <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <img src="/logo-1.png" alt="Team Mushak Logo" style={{ height: '38px', objectFit: 'contain' }} />
+          <img src="./logo-1.png" alt="Team Mushak Logo" style={{ height: '38px', objectFit: 'contain' }} />
         </a>
 
         {/* Center: HUD indicator and NASA logo */}
@@ -48,7 +48,7 @@ export default function Navbar() {
             <span className="nav-mobile-overlay" style={{ display: 'none' }}>ACTIVE</span>
           </div>
           <div className="hud-decorations" style={{ height: '24px', width: '1px', background: 'var(--border)' }} />
-          <img className="hud-decorations" src="/nasa.png" alt="NASA Logo" style={{ height: '32px', objectFit: 'contain', opacity: 0.95 }} />
+          <img className="hud-decorations" src="./nasa.png" alt="NASA Logo" style={{ height: '32px', objectFit: 'contain', opacity: 0.95 }} />
         </div>
 
         {/* Right: nav links */}

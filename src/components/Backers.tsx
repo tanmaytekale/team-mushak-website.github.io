@@ -6,14 +6,14 @@ const backers = [
     amount: '$30,000',
     detail: "One of India's largest grants for a student engineering team. Backed by Peter Thiel and Tyler Cowen of the Mercatus Center at George Mason University.",
     tag: 'Lead Grant · 2026',
-    logo: '/Emergent Ventures.png',
+    logo: './Emergent Ventures.png',
   },
   {
     name: 'SuperYou',
     amount: 'Official Partner',
     detail: "Officially backed by Ranveer Singh's SuperYou platform, strengthening our cultural reach and amplifying the message that engineering is the future of India.",
     tag: 'Cultural Partner · 2026',
-    logo: '/SuperYou.png',
+    logo: './SuperYou.png',
   },
 ]
 

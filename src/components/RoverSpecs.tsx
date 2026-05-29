@@ -45,7 +45,7 @@ export default function RoverSpecs() {
               style={{ y: imgY, position: 'relative', width: '100%', height: 'clamp(400px, 50vw, 620px)', overflow: 'hidden' }}
             >
               <img
-                src="/rover_opt.jpeg"
+                src="./rover_opt.jpeg"
                 alt="Mushak Rover"
                 style={{
                   width: '100%',

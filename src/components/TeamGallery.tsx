@@ -37,7 +37,7 @@ export default function TeamGallery() {
         style={{ width: '100%', overflow: 'hidden', position: 'relative' }}
       >
         <img
-          src="/team_opt.jpg"
+          src="./team_opt.jpg"
           alt="Team Mushak"
           style={{ width: '100%', height: 'clamp(420px, 60vw, 820px)', objectFit: 'cover', objectPosition: 'center center', display: 'block' }}
         />

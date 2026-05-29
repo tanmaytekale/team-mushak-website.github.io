@@ -65,7 +65,7 @@ export default function Hero() {
 
       {/* BG image with parallax */}
       <motion.div style={{ position: 'absolute', inset: '-6%', scale: bgScale, opacity: bgOpacity, zIndex: 1 }}>
-        <img src="/bg_opt.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src="./bg_opt.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(43,42,41,0.2) 0%, rgba(43,42,41,0.45) 50%, rgba(43,42,41,0.92) 100%)' }} />
       </motion.div>
 
@@ -122,7 +122,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '1.1rem', background: 'rgba(255, 252, 225, 0.03)', border: '1px solid var(--border)', padding: '0.7rem 1.4rem', borderRadius: '4px', marginBottom: '2.5rem' }}
         >
-          <img src="/nasa.png" alt="NASA Logo" style={{ height: '36px', objectFit: 'contain' }} />
+          <img src="./nasa.png" alt="NASA Logo" style={{ height: '36px', objectFit: 'contain' }} />
           <div style={{ height: '22px', width: '1px', background: 'var(--border)' }} />
           <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.72rem', letterSpacing: '0.2em', color: 'var(--off-white)', textTransform: 'uppercase', fontWeight: 500 }}>NASA HERC 2026</span>
         </motion.div>
