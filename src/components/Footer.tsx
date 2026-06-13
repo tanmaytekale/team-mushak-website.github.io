@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="grid-footer">
           {/* Brand */}
           <div>
-            <img src="./logo-1.png" alt="Team Mushak" style={{ height: '38px', marginBottom: '1.5rem', display: 'block' }} />
+            <img src="./logo-1.png" alt="Team Mushak" style={{ height: '80px', marginBottom: '1.5rem', display: 'block' }} />
             <p style={{ color: 'rgba(255, 252, 225, 0.35)', fontSize: '0.85rem', lineHeight: 1.75, maxWidth: '240px' }}>
               India's top-ranking RC division team at NASA HERC. Backed by Emergent Ventures and SuperYou.
             </p>
