@@ -122,7 +122,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '1.1rem', background: 'rgba(255, 252, 225, 0.03)', border: '1px solid var(--border)', padding: '0.7rem 1.4rem', borderRadius: '4px', marginBottom: '2.5rem' }}
         >
-          <img src="./ATLAS SkillTech University.svg" alt="ATLAS SkillTech University Logo" style={{ height: '28px', objectFit: 'contain' }} />
+          <img src="./atlas-skilltech-circle.svg" alt="ATLAS SkillTech University Logo" style={{ height: '28px', width: '28px', objectFit: 'contain' }} />
           <div style={{ height: '22px', width: '1px', background: 'var(--border)' }} />
           <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.72rem', letterSpacing: '0.2em', color: 'var(--off-white)', textTransform: 'uppercase', fontWeight: 500 }}>University Rover Challenge 2027</span>
         </motion.div>
@@ -137,11 +137,11 @@ export default function Hero() {
         </motion.span>
 
         <h1 style={{
-          fontSize: 'clamp(2.8rem, 8vw, 7.5rem)',
-          fontWeight: 700,
-          letterSpacing: '-0.03em',
-          lineHeight: 1.05,
-          fontFamily: "'Space Grotesk', sans-serif",
+          fontSize: 'clamp(2.4rem, 7vw, 6.5rem)',
+          fontWeight: 800,
+          letterSpacing: '0.02em',
+          lineHeight: 1.1,
+          fontFamily: "'Orbitron', 'Space Grotesk', sans-serif",
           color: 'var(--off-white)',
           marginBottom: '1.5rem',
           textShadow: '0 0 80px rgba(43,42,41,0.8)',

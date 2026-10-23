@@ -36,7 +36,7 @@ export default function Navbar() {
         }}
       >
         {/* Left: logo */}
-        <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <img src="./logo-1.svg" alt="Team Mushak Logo" style={{ height: '42px', objectFit: 'contain' }} />
         </a>
 
