@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef, useEffect } from 'react'
+import { scrollToSection } from '../lib/scrollTo'
 
 function StarCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -122,7 +123,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '1.1rem', background: 'rgba(255, 252, 225, 0.03)', border: '1px solid var(--border)', padding: '0.7rem 1.4rem', borderRadius: '4px', marginBottom: '2.5rem' }}
         >
-          <img src="./atlas-skilltech-circle.svg" alt="ATLAS SkillTech University Logo" style={{ height: '28px', width: '28px', objectFit: 'contain' }} />
+          <img src="./atlas-skilltech-circle.svg" alt="ATLAS SkillTech University Logo" style={{ height: '40px', width: '40px', objectFit: 'contain' }} />
           <div style={{ height: '22px', width: '1px', background: 'var(--border)' }} />
           <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.72rem', letterSpacing: '0.2em', color: 'var(--off-white)', textTransform: 'uppercase', fontWeight: 500 }}>University Rover Challenge 2027</span>
         </motion.div>
@@ -164,8 +165,8 @@ export default function Hero() {
           transition={{ delay: 1.1 }}
           style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}
         >
-          <a href="#about" className="btn btn-outline-white">Explore Mission</a>
-          <a href="#rover" className="btn btn-solid-red">View Rover</a>
+          <a href="#about" onClick={e => scrollToSection(e, '#about')} className="btn btn-outline-white">Explore Mission</a>
+          <a href="#rover" onClick={e => scrollToSection(e, '#rover')} className="btn btn-solid-red">View Rover</a>
         </motion.div>
       </motion.div>
 

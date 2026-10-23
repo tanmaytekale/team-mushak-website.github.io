@@ -1,3 +1,4 @@
+import { scrollToSection } from '../lib/scrollTo'
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
               {['Mission', 'Legacy', 'Rover', 'Sponsors', 'Crew'].map((item, i) => {
                 const hrefs = ['#about','#impact','#rover','#sponsors','#team']
                 return (
-                  <a key={item} href={hrefs[i]} style={{ fontSize: '0.88rem', color: 'rgba(255, 252, 225, 0.45)', letterSpacing: '0.03em' }}>{item}</a>
+                  <a key={item} href={hrefs[i]} onClick={e => scrollToSection(e, hrefs[i])} style={{ fontSize: '0.88rem', color: 'rgba(255, 252, 225, 0.45)', letterSpacing: '0.03em' }}>{item}</a>
                 )
               })}
             </div>

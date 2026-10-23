@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { scrollToSection } from '../lib/scrollTo'
 
 const links = [
   { label: 'Mission', href: '#about' },
@@ -36,7 +37,7 @@ export default function Navbar() {
         }}
       >
         {/* Left: logo */}
-        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <a href="/" onClick={e => scrollToSection(e, '/')} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <img src="./logo-1.svg" alt="Team Mushak Logo" style={{ height: '42px', objectFit: 'contain' }} />
         </a>
 
@@ -57,6 +58,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={e => scrollToSection(e, link.href)}
                 style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255, 252, 225, 0.55)', transition: 'color 0.2s', fontFamily: "'Space Grotesk', sans-serif" }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--off-white)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255, 252, 225, 0.55)')}
@@ -131,7 +133,10 @@ export default function Navbar() {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: idx * 0.05 }}
-                onClick={() => setIsOpen(false)}
+                onClick={e => {
+                  scrollToSection(e, link.href)
+                  setIsOpen(false)
+                }}
                 style={{
                   fontSize: '0.95rem',
                   fontWeight: 500,
