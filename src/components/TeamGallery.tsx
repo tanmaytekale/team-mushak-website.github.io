@@ -23,7 +23,7 @@ export default function TeamGallery() {
             transition={{ duration: 0.9, delay: 0.1 }}
             style={{ color: 'rgba(255, 252, 225, 0.45)', lineHeight: 1.8, fontSize: '1rem', fontWeight: 300 }}
           >
-            A collective of brilliant minds representing India on the global stage. Engineers, designers, strategists — united by one mission: to push the boundaries of what a student team can achieve.
+            A collective of brilliant minds representing India on the global stage. Engineers, designers, strategists, united by one mission: to push the boundaries of what a student team can achieve.
           </motion.p>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default function TeamGallery() {
         <img
           src="./team_opt.jpg"
           alt="Team Mushak"
-          style={{ width: '100%', height: 'clamp(420px, 60vw, 820px)', objectFit: 'cover', objectPosition: 'center center', display: 'block' }}
+          style={{ width: '100%', height: 'clamp(420px, 60vw, 820px)', objectFit: 'cover', objectPosition: 'center 22%', display: 'block' }}
         />
         {/* Gradient overlays */}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 55%, rgba(43,42,41,0.7) 100%)' }} />
@@ -64,8 +64,8 @@ export default function TeamGallery() {
           color: 'rgba(255, 252, 225, 0.5)', textTransform: 'uppercase', lineHeight: 1.8,
         }}>
           <div style={{ color: 'rgba(227, 30, 36, 0.8)', marginBottom: '0.3rem' }}>◈ CREW MANIFEST</div>
-          <div>TEAM MUSHAK · HERC 2026</div>
-          <div>INDIA RC DIVISION</div>
+          <div>TEAM MUSHAK · ATLAS SKILLTECH UNIVERSITY</div>
+          <div>URC 2027 CAMPAIGN</div>
         </div>
       </motion.div>
 
@@ -78,7 +78,7 @@ export default function TeamGallery() {
           transition={{ duration: 0.8, delay: 0.3 }}
           style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '2rem', borderTop: '1px solid var(--border)', marginTop: '3rem' }}
         >
-          <span style={{ fontSize: '0.75rem', color: 'rgba(255, 252, 225, 0.25)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Team Mushak · HERC 2026</span>
+          <span style={{ fontSize: '0.75rem', color: 'rgba(255, 252, 225, 0.25)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Team Mushak · URC 2027</span>
           <span style={{ fontSize: '0.75rem', color: 'rgba(255, 252, 225, 0.25)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>India's Finest</span>
         </motion.div>
       </div>

@@ -6,9 +6,9 @@ export default function Footer() {
         <div className="grid-footer">
           {/* Brand */}
           <div>
-            <img src="./logo-1.png" alt="Team Mushak" style={{ height: '38px', marginBottom: '1.5rem', display: 'block' }} />
+            <img src="./logo-1.svg" alt="Team Mushak" style={{ height: '64px', marginBottom: '1.5rem', display: 'block' }} />
             <p style={{ color: 'rgba(255, 252, 225, 0.35)', fontSize: '0.85rem', lineHeight: 1.75, maxWidth: '240px' }}>
-              India's top-ranking RC division team at NASA HERC. Backed by Emergent Ventures and SuperYou.
+              ATLAS SkillTech University's UGV team. Two-time NASA HERC finalists, now building for URC 2027. Backed by Emergent Ventures and SuperYou.
             </p>
             {/* HUD status */}
             <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(227, 30, 36, 0.6)', fontFamily: "'Space Grotesk'" }}>
@@ -21,8 +21,8 @@ export default function Footer() {
           <div>
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'rgba(255, 252, 225, 0.25)', display: 'block', marginBottom: '1.5rem', fontFamily: "'Space Grotesk'" }}>Navigation</span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-              {['Mission', 'Awards', 'Rover', 'Backers', 'Crew'].map((item, i) => {
-                const hrefs = ['#about','#impact','#rover','#backers','#team']
+              {['Mission', 'Legacy', 'Rover', 'Sponsors', 'Crew'].map((item, i) => {
+                const hrefs = ['#about','#impact','#rover','#sponsors','#team']
                 return (
                   <a key={item} href={hrefs[i]} style={{ fontSize: '0.88rem', color: 'rgba(255, 252, 225, 0.45)', letterSpacing: '0.03em' }}>{item}</a>
                 )
@@ -35,7 +35,7 @@ export default function Footer() {
             <span style={{ fontSize: '0.65rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'rgba(255, 252, 225, 0.25)', display: 'block', marginBottom: '1.5rem', fontFamily: "'Space Grotesk'" }}>Accolades</span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
               {[
-                '◈ Top 7 of 56 Teams Globally',
+                '◈ NASA HERC Top 7 of 56 Globally',
                 '◈ STEM Award Winner',
                 '◈ Best Social Media Award',
                 '◈ $30K Emergent Ventures Grant',
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div style={{ borderTop: '1px solid var(--border)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '0.72rem', color: 'rgba(255, 252, 225, 0.2)', letterSpacing: '0.1em' }}>© 2026 Team Mushak. All rights reserved.</span>
-          <span style={{ fontSize: '0.72rem', color: 'rgba(255, 252, 225, 0.2)', letterSpacing: '0.1em' }}>NASA HERC 2026</span>
+          <span style={{ fontSize: '0.72rem', color: 'rgba(255, 252, 225, 0.2)', letterSpacing: '0.1em' }}>URC 2027</span>
         </div>
       </div>
     </footer>

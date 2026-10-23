@@ -4,7 +4,7 @@ const awards = [
   {
     tag: '2025 · NASA HERC',
     title: 'STEM Excellence Award',
-    description: "Awarded to teams that don't just build advanced engineering systems but actively inspire, educate, and influence thousands through real-world STEM impact — aligned with NASA's vision for the next generation of space innovators.",
+    description: "Awarded to teams that don't just build advanced engineering systems but actively inspire, educate, and influence thousands through real-world STEM impact, aligned with NASA's vision for the next generation of space innovators.",
     icon: '◎',
   },
   {
@@ -28,8 +28,8 @@ export default function Impact() {
             viewport={{ once: true }}
             transition={{ duration: 0.9 }}
           >
-            <span className="eyebrow">[RECOGNITION.SYS // AWARDS]</span>
-            <h2 className="section-title">Awards that<br />define our impact.</h2>
+            <span className="eyebrow">[RECOGNITION.SYS // PAST MISSIONS]</span>
+            <h2 className="section-title">Our legacy at<br />NASA HERC.</h2>
           </motion.div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -38,12 +38,12 @@ export default function Impact() {
             transition={{ duration: 0.9, delay: 0.1 }}
             style={{ color: 'rgba(255, 252, 225, 0.45)', lineHeight: 1.8, fontSize: '1rem', fontWeight: 300 }}
           >
-            At NASA HERC 2025, Team Mushak didn't just rank — we were recognized in two distinct award categories that reflect our dual mission: engineering excellence and public science education.
+            Across two years at NASA's Human Exploration Rover Challenge, Team Mushak didn't just rank: we were recognized in two distinct award categories that reflect our dual mission, engineering excellence and public science education. That foundation is what we're bringing into URC 2027.
           </motion.p>
         </div>
 
         {/* Award cards with HUD treatment */}
-        <div className="grid-split" style={{ gap: '2px', background: 'var(--border)' }}>
+        <div className="grid-split" style={{ gap: '1.5rem' }}>
           {awards.map((award, i) => (
             <motion.div
               key={award.title}
@@ -51,11 +51,15 @@ export default function Impact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.15 }}
+              whileHover={{ y: -4 }}
               style={{
                 background: 'var(--black)',
+                border: '1px solid var(--border)',
+                borderRadius: '12px',
                 padding: '4rem',
                 position: 'relative',
                 overflow: 'hidden',
+                transition: 'border-color 0.3s ease',
               }}
             >
               {/* Corner brackets */}
@@ -84,7 +88,7 @@ export default function Impact() {
           {/* decorative line */}
           <div style={{ width: '40px', height: '1px', background: 'var(--accent-red)', margin: '0 auto 3rem', opacity: 0.6 }} />
           <p style={{ fontSize: 'clamp(1.2rem, 2.2vw, 1.8rem)', fontWeight: 300, lineHeight: 1.65, color: 'rgba(255, 252, 225, 0.65)', fontStyle: 'italic' }}>
-            "We don't just build rovers — we build the future of Indian space engineering, one competition at a time."
+            "We don't just build rovers; we build the future of Indian space engineering, one competition at a time."
           </p>
           <span style={{ display: 'block', marginTop: '2.5rem', fontSize: '0.65rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'rgba(255, 252, 225, 0.25)' }}>◈ Team Mushak ◈</span>
         </motion.div>

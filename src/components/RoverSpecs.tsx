@@ -5,7 +5,7 @@ const specRows = [
   { label: 'Drive System', value: 'Four-wheel independent' },
   { label: 'Power', value: 'Human + Assisted' },
   { label: 'Chassis', value: 'Ultra-lightweight composite' },
-  { label: 'Competition', value: 'NASA HERC 2026' },
+  { label: 'Competition', value: 'NASA HERC 2025' },
   { label: 'Division', value: 'RC (Remote-Controlled)' },
   { label: 'Terrain', value: 'Extreme lunar simulation' },
 ]
@@ -27,8 +27,8 @@ export default function RoverSpecs() {
           transition={{ duration: 0.9 }}
           style={{ marginBottom: '5rem' }}
         >
-          <span className="eyebrow">[DIAGNOSTICS.ENG // THE ROVER]</span>
-          <h2 className="section-title">The Rover.</h2>
+          <span className="eyebrow">[ARCHIVE.ENG // THE LEGACY ROVER]</span>
+          <h2 className="section-title">The Rover That<br />Got Us Here.</h2>
         </motion.div>
 
         <div className="grid-split" style={{ alignItems: 'center' }}>
@@ -42,7 +42,7 @@ export default function RoverSpecs() {
             style={{ position: 'relative' }}
           >
             <motion.div
-              style={{ y: imgY, position: 'relative', width: '100%', height: 'clamp(400px, 50vw, 620px)', overflow: 'hidden' }}
+              style={{ y: imgY, position: 'relative', width: '100%', height: 'clamp(400px, 50vw, 620px)', overflow: 'hidden', borderRadius: '14px' }}
             >
               <img
                 src="./rover_opt.jpeg"
@@ -86,7 +86,7 @@ export default function RoverSpecs() {
 
             {/* HUD label bottom-left */}
             <div style={{ position: 'absolute', bottom: '1.2rem', left: '1.2rem', fontFamily: "'Space Grotesk'", fontSize: '0.6rem', letterSpacing: '0.2em', color: 'rgba(255, 252, 225, 0.45)', textTransform: 'uppercase' }}>
-              <span style={{ color: 'rgba(227, 30, 36, 0.8)' }}>◈ </span>UNIT-01 · MUSHAK RC
+              <span style={{ color: 'rgba(227, 30, 36, 0.8)' }}>◈ </span>UNIT-01 · HERC LEGACY ROVER
             </div>
           </motion.div>
 
@@ -97,12 +97,15 @@ export default function RoverSpecs() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number], delay: 0.1 }}
           >
-            <p style={{ fontSize: '1rem', color: 'rgba(255, 252, 225, 0.5)', lineHeight: 1.85, fontWeight: 300, marginBottom: '3rem' }}>
-              Engineered for precision and resilience. The Mushak rover navigates extreme terrain without compromise — built for the demands of NASA HERC and beyond.
+            <p style={{ fontSize: '1rem', color: 'rgba(255, 252, 225, 0.5)', lineHeight: 1.85, fontWeight: 300, marginBottom: '2rem' }}>
+              This is the rover that carried Team Mushak to a global top-7 finish at NASA HERC 2025, engineered for precision and resilience across extreme terrain.
+            </p>
+            <p style={{ fontSize: '0.9rem', color: 'rgba(227, 30, 36, 0.8)', lineHeight: 1.7, fontWeight: 400, marginBottom: '3rem', letterSpacing: '0.02em' }}>
+              ◈ UNIT-02 is now in early development for the University Rover Challenge 2027, built from the ground up for sample retrieval, equipment servicing, and autonomous navigation.
             </p>
 
             {/* Spec table with HUD feel */}
-            <div style={{ border: '1px solid var(--border)', position: 'relative' }}>
+            <div style={{ border: '1px solid var(--border)', borderRadius: '10px', overflow: 'hidden', position: 'relative' }}>
               {/* HUD header */}
               <div style={{ padding: '0.75rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'rgba(227, 30, 36, 0.06)', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <span style={{ width: '6px', height: '6px', background: 'var(--accent-red)', borderRadius: '50%', display: 'inline-block' }} />

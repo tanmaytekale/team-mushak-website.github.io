@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
   { label: 'Mission', href: '#about' },
-  { label: 'Awards', href: '#impact' },
+  { label: 'Legacy', href: '#impact' },
   { label: 'Rover', href: '#rover' },
-  { label: 'Backers', href: '#backers' },
+  { label: 'Sponsors', href: '#sponsors' },
   { label: 'Crew', href: '#team' },
 ]
 
@@ -27,7 +27,7 @@ export default function Navbar() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         style={{
           position: 'fixed', width: '100%', top: 0, zIndex: 100,
-          padding: scrolled ? '0.9rem 2rem' : '1.3rem 2rem',
+          padding: scrolled ? '0.6rem 2rem' : '0.85rem 2rem',
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
           backgroundColor: scrolled ? 'rgba(43,42,41,0.96)' : '#2B2A29',
           backdropFilter: scrolled ? 'blur(20px)' : 'none',
@@ -37,18 +37,16 @@ export default function Navbar() {
       >
         {/* Left: logo */}
         <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <img src="./logo-1.png" alt="Team Mushak Logo" style={{ height: '38px', objectFit: 'contain' }} />
+          <img src="./logo-1.svg" alt="Team Mushak Logo" style={{ height: '42px', objectFit: 'contain' }} />
         </a>
 
         {/* Center: HUD indicator and NASA logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent-red)', opacity: 0.9, fontFamily: "'Space Grotesk', sans-serif" }}>
             <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: 'var(--accent-red)', display: 'inline-block', animation: 'blink 1.2s step-end infinite' }} />
-            <span className="hud-decorations">[SYS.ACTIVE · NASA HERC 2026]</span>
+            <span className="hud-decorations">[SYS.ACTIVE · URC 2027]</span>
             <span className="nav-mobile-overlay" style={{ display: 'none' }}>ACTIVE</span>
           </div>
-          <div className="hud-decorations" style={{ height: '24px', width: '1px', background: 'var(--border)' }} />
-          <img className="hud-decorations" src="./nasa.png" alt="NASA Logo" style={{ height: '32px', objectFit: 'contain', opacity: 0.95 }} />
         </div>
 
         {/* Right: nav links */}
@@ -151,7 +149,7 @@ export default function Navbar() {
             
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.65rem', letterSpacing: '0.15em', color: 'var(--accent-red)', fontFamily: "'Space Grotesk', sans-serif", marginTop: '1rem' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: 'var(--accent-red)', display: 'inline-block', animation: 'blink 1.2s step-end infinite' }} />
-              [COMMS ACTIVE · HERC 2026]
+              [COMMS ACTIVE · URC 2027]
             </div>
           </motion.div>
         )}

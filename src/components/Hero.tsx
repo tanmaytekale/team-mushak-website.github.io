@@ -99,7 +99,7 @@ export default function Hero() {
       {/* HUD status top-right */}
       <div className="hud-decorations" style={{ position: 'absolute', top: '5rem', right: '3rem', zIndex: 4, fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.62rem', letterSpacing: '0.15em', color: 'rgba(255, 252, 225, 0.3)', textAlign: 'right', lineHeight: 1.8 }}>
         <div>SYS STATUS: <span style={{ color: 'var(--accent-red)' }}>NOMINAL</span></div>
-        <div>MISSION: HERC-2026</div>
+        <div>MISSION: URC-2027</div>
         <div>CYCLE: <span className="blink">■</span></div>
       </div>
 
@@ -122,9 +122,9 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '1.1rem', background: 'rgba(255, 252, 225, 0.03)', border: '1px solid var(--border)', padding: '0.7rem 1.4rem', borderRadius: '4px', marginBottom: '2.5rem' }}
         >
-          <img src="./nasa.png" alt="NASA Logo" style={{ height: '36px', objectFit: 'contain' }} />
+          <img src="./ATLAS SkillTech University.svg" alt="ATLAS SkillTech University Logo" style={{ height: '28px', objectFit: 'contain' }} />
           <div style={{ height: '22px', width: '1px', background: 'var(--border)' }} />
-          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.72rem', letterSpacing: '0.2em', color: 'var(--off-white)', textTransform: 'uppercase', fontWeight: 500 }}>NASA HERC 2026</span>
+          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.72rem', letterSpacing: '0.2em', color: 'var(--off-white)', textTransform: 'uppercase', fontWeight: 500 }}>University Rover Challenge 2027</span>
         </motion.div>
 
         <motion.span
@@ -133,7 +133,7 @@ export default function Hero() {
           transition={{ delay: 0.7 }}
           style={{ display: 'block', fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.3em', color: 'var(--off-white)', marginBottom: '1.5rem', textTransform: 'uppercase' }}
         >
-          [MISSION.LOG // INDIA'S PREMIER SPACE ENGINEERING TEAM]
+          [MISSION.LOG // ATLAS SKILLTECH UNIVERSITY'S UGV TEAM]
         </motion.span>
 
         <h1 style={{
@@ -155,7 +155,7 @@ export default function Hero() {
           transition={{ delay: 0.9 }}
           style={{ fontSize: '1rem', color: 'rgba(255, 252, 225, 0.5)', fontWeight: 300, maxWidth: '480px', margin: '0 auto 2.2rem', lineHeight: 1.7, letterSpacing: '0.03em' }}
         >
-          Top 7 globally. Two consecutive India representations. <br />NASA HERC 2026 RC Division.
+          Two-time NASA HERC top-7 finalists. <br />Now building for the University Rover Challenge 2027.
         </motion.p>
 
         <motion.div

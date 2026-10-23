@@ -111,7 +111,7 @@ section { padding: 10rem 0; }
   letter-spacing: -0.02em;
 }
 
-/* HUD corner bracket — top-left */
+/* HUD corner bracket: top-left */
 .hud-corner {
   position: relative;
 }
@@ -176,10 +176,17 @@ section { padding: 10rem 0; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   border: none;
   outline: none;
+  border-radius: 6px;
   font-family: 'Space Grotesk', sans-serif;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
 }
 
 .btn-outline-white {
@@ -202,6 +209,7 @@ section { padding: 10rem 0; }
 .btn-solid-red:hover {
   background: #b81419;
   opacity: 1;
+  box-shadow: 0 8px 24px rgba(227, 30, 36, 0.3);
 }
 
 /* Retro grid overlay for sections */
@@ -263,6 +271,14 @@ section { padding: 10rem 0; }
   grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.grid-stats > div {
+  transition: background-color 0.35s ease;
+}
+.grid-stats > div:hover {
+  background-color: rgba(255, 252, 225, 0.025);
 }
 @media (max-width: 900px) {
   .grid-stats {
@@ -284,6 +300,11 @@ section { padding: 10rem 0; }
   align-items: center;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  transition: background-color 0.35s ease;
+}
+.backer-card:hover {
+  background: #2f2e2c;
 }
 @media (max-width: 768px) {
   .backer-card {

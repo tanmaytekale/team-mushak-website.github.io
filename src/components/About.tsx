@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 
 const stats = [
-  { number: '#7', label: 'Global Rank', sub: 'Out of 56 teams' },
-  { number: '2×', label: 'Consecutive', sub: 'India representation' },
+  { number: '#5', label: 'Global Rank', sub: 'NASA HERC 2025' },
+  { number: '2×', label: 'Consecutive', sub: 'NASA HERC appearances' },
   { number: '6', label: 'Countries', sub: 'Competed against' },
-  { number: '3', label: 'Awards', sub: 'HERC 2025' },
+  { number: 'URC', label: 'Next Mission', sub: '2027 Campaign' },
 ]
 
 export default function About() {
@@ -51,7 +51,7 @@ export default function About() {
           >
             <span className="eyebrow">[MANIFEST.SYS // WHO WE ARE]</span>
             <h2 className="section-title" style={{ marginBottom: '2rem' }}>
-              The only team to<br />represent India<br />twice in a row.
+              Atlas SkillTech's<br />unmanned ground<br />vehicle team.
             </h2>
           </motion.div>
           <motion.div
@@ -62,10 +62,10 @@ export default function About() {
             style={{ paddingTop: '3.5rem' }}
           >
             <p style={{ fontSize: '1.05rem', color: 'rgba(255, 252, 225, 0.5)', lineHeight: 1.8, fontWeight: 300, marginBottom: '2rem' }}>
-              Team Mushak competes in NASA's Human Exploration Rover Challenge — one of the world's most prestigious student engineering competitions. We don't just build rovers. We build legacies.
+              Team Mushak is a student engineering team from ATLAS SkillTech University that designs and builds unmanned ground vehicles. We don't just build rovers. We build legacies.
             </p>
             <p style={{ fontSize: '1.05rem', color: 'rgba(255, 252, 225, 0.5)', lineHeight: 1.8, fontWeight: 300 }}>
-              Our rover secured a global top 7 rank in 2025, facing off against elite teams from 6 countries — and we're back in 2026 to go even further.
+              For the past two years we represented India at NASA's Human Exploration Rover Challenge, securing a global top-7 rank in 2025. Now, we're channeling that experience into a new mission: the University Rover Challenge 2027.
             </p>
           </motion.div>
         </div>
@@ -121,7 +121,7 @@ export default function About() {
             transition={{ duration: 1, delay: 0.1 }}
             style={{ color: 'rgba(255, 252, 225, 0.5)', lineHeight: 1.8, fontSize: '1.05rem', fontWeight: 300, alignSelf: 'end' }}
           >
-            We represent a new generation of Indian engineers — students who don't wait for the future, but build it. Our rover is not just a machine; it is a proof of concept for what is possible when curiosity meets rigorous engineering.
+            We represent a new generation of Indian engineers, students who don't wait for the future, but build it. Every rover we build is a proof of concept for what is possible when curiosity meets rigorous engineering, carried forward from one competition to the next.
           </motion.p>
         </div>
       </div>
