@@ -8,7 +8,7 @@ const awards = [
     icon: '◎',
   },
   {
-    tag: '2025 · NASA HERC',
+    tag: '2025 & 2026 · NASA HERC',
     title: 'Best Social Media Award',
     description: "Recognized for turning complex space engineering into engaging, high-reach content. We spread science-based knowledge at scale, capturing massive audience attention and driving genuine education far beyond the competition floor.",
     icon: '◉',
