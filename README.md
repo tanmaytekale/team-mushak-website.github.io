@@ -2,6 +2,8 @@
 
 Website for Team Mushak, the unmanned ground vehicle team at ATLAS SkillTech University. Two-time NASA HERC finalists, now building for the University Rover Challenge 2027.
 
+Live at [www.teammushak.in](https://www.teammushak.in).
+
 ## Stack
 
 React + TypeScript + Vite, with Framer Motion for animation.
